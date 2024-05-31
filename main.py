@@ -1,6 +1,6 @@
 import random
 from replit import clear
-
+from art import logo
 def deal_card():
   cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
   card = random.choice(cards)
@@ -35,18 +35,7 @@ def compare(user_score, computer_score):
     return "You lose"
 
 def play_game():
-  printlogo = """
-       .------.            _     _            _    _            _    
-       |A_  _ |.          | |   | |          | |  (_)          | |   
-       |( \/ ).-----.     | |__ | | __ _  ___| | ___  __ _  ___| | __
-       | \  /|K /\  |     | '_ \| |/ _` |/ __| |/ / |/ _` |/ __| |/ /
-       |  \/ | /  \ |     | |_) | | (_| | (__|   <| | (_| | (__|   < 
-       `-----| \  / |     |_.__/|_|\__,_|\___|_|\_\ |\__,_|\___|_|\_\\
-             |  \/ K|                            _/ |                
-             `------'                           |__/           
-       """
-)
-
+  print(logo)
   user_cards = []
   computer_cards = []
   is_game_over = False
